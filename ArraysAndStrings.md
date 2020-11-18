@@ -11,8 +11,8 @@ The regex would be /(?<=\w)\s(?=\w)/g
 
 5. Create an index matcher object to hold each char and its index in both strings. Iterate over each index. For each different value at the specific index, increment the difference count by 1. If the diffCount is greater than 1, return false. Otherwise, return true
 
-6. Use a frequency counter and track the freq of each char in the string. Create the compressed string from the frequency counter. If it is shorter than the original string, return it. Otherwise, return the original string.
-
+6. Use a regex to find the different parts where we have the same chars in a row and put them into an array. For each element of the array, combine the first char of that element with the length of that element and add it to a new string. Check to see if that new string length is less than the old one and return based off of that.
+Regex: /([a-zA-Z])\1*/g
 7. 
 
 8. Create a copy of the input. Iterate over the original. If a 0 is found, turn the values in the copy in the same row and column to 0. Return the copy

@@ -2,7 +2,7 @@
 
 2. Iterate over the linked list once to find the length of the linked list. Find the index of the target node by doing length - n + 1 (to account for the last node). Iterate over the linked list again keeping and return the node at the correct index.
 
-3. ???
+3. Copy the data from the next node over to the current node, and then delete the next node. Problem cannot be solved if the node to be deleted is the last node in the linked list. 
 
 4. Iterate over the linked list. If the currNode.val is less than x, set it to the new Linked List we create. Iterate over the linked list again. If t he currNode.val is greater than or equal to x, add it to the new Linked List. Return the head of the new linked list. 
 
